@@ -2,8 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
+ * main - prints if the number is positive, zero or negative
  *
- * main - prints if number is positive, zero or negative
+ * Description: program will assign a random number
  *
  * Return: Always 0 (Success)
  */
@@ -21,7 +22,7 @@
 	{
 		printf("%d is zero\n", n);
 	}
-	else
+ 	else
 	{
 		printf("%d is negative\n", n);
 	}
