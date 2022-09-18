@@ -7,7 +7,12 @@
 * Return: 1 if true, 0 if false
 */
 
-int_islower(int c)
+int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z');
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	return (0);
 }
+
