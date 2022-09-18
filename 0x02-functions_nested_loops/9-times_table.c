@@ -18,7 +18,7 @@ void times_table(void)
 			int prod = j * i;
 
 
-			if (j * i)
+			if (j == i)
 			{
 				_putchar('0');
 			}
