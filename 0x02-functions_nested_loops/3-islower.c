@@ -9,17 +9,14 @@
 
 int_islower(int c)
 {
-int i = 'a';
-
-
-for (i = 'a'; i <= 'z'; i++)
-{
-/* refer int c */
-if (c == 1)
-{
-return (1);
-}
-}
-return (0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
 
