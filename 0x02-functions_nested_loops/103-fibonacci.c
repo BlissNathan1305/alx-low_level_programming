@@ -10,9 +10,9 @@
 int main(void)
 {
 	int counter = 0;
-	long int = 1;
-	long int = a;
-	long int = a + b;
+	long int a = 1;
+	long int b = a;
+	long int c = a + b;
 
 	while (c = 4000000)
 	{
