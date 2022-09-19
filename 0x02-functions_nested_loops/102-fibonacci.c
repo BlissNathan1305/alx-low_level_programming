@@ -14,7 +14,7 @@ int main(void)
 	long int c = a + b;
 
 
-	printf("%ld, %ld," a, b);
+	printf("%ld, %ld, " a, b);
 	while (counter < 50)
 
 	{
