@@ -7,7 +7,7 @@
  *
  */
 
-void print_alphabet_x10(void)
+void print_alphanet_x10(void)
 {
 	char i;
 	char h;
@@ -18,6 +18,8 @@ void print_alphabet_x10(void)
 		{
 			_putchar(i);
 		}
-		_putchar('\n');
+		_putchar(i);
 	}
 }
+
+
