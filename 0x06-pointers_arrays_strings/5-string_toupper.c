@@ -3,11 +3,10 @@
 /**
  * string_toupper - function to transform all lower case in string to upper
  *
- * @c:character string pointer 
+ * @c:character string pointer
  * Return:char pointer
  */
-
- char *string_toupper(char *)
+char *string_toupper(char *c)
 {
 	int i = 0;
 
