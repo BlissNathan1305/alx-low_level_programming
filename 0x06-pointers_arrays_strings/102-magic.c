@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * main - entry point
  * Description: adds a line in the code and uses printf
- * Return: 0
+ * Return:0
  */
 
 int main(void)
