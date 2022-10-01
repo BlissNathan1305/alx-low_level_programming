@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (atoi(argv[i]) < 0)
+	else if (atoi(argv[1]) < 0)
 	{
 		printf("%d\n", 0);
 		return (0);
 	}
 	count = coin_count(count, atoi(argv[1]));
-	printf("%d\n", countt);
+	printf("%d\n", count);
 	return (0);
 }
 
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 
 unsigned int coin_count(unsigned int count, int num)
 {
-	unsigned int = 0;
+	unsigned int sum = 0;
 
 	while (!(sum + 25 > (unsigned int)num))
 	{
