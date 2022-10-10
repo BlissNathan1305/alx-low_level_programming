@@ -1,17 +1,14 @@
-#include "0-object_line_macro.h"
-#include "0-object_line_macro.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - checks the code
+ *main - print the the name of the file it was compiled from,
+ *followed by a new line
  *
- * Return: Always 0.
+ *Return: 0 on success
  */
 int main(void)
 {
-	int s;
-
-	s = 98 + SIZE;
-	printf("%d\n", s);
+	printf("%s\n", __FILE__);
 	return (0);
 }
