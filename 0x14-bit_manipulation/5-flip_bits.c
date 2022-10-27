@@ -1,26 +1,22 @@
 #include "main.h"
-
 /**
- * flip_bits - number of different bits between two numbers
- * @n: first number
- * @m: second number
- *
- * Return: number of bits you would need to flip
- * to get from one number to another.
+ * flip_bits - number of bits you would need to flip
+ * to get from one number to another
+ * @n: parameter
+ * @m: destiny
+ * Return: nflips
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int diff, check;
-	unsigned int count, i;
+	unsigned int i, nflips = 0;
+	unsigned long int j = sizeof(unsigned long int) * 8;
 
-	count = 0;
-	check = 1;
-	diff = n ^ m;
-	for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
+	for (i = 0; i < j; i++)
 	{
-		if (check == (diff & check))
-			count++;
-		check <<= 1;
+		if ((m & 1) != (n & 1))
+			nflips += 1;
+		n = n >> 1;
+		m = m >> 1;
 	}
-	return (count);
+	return (nflips);
 }
